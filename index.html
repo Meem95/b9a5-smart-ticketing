@@ -8,9 +8,154 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .font-raleway{
+            font-family: "Raleway", sans-serif;
+        }
+        .font-inter{
+            font-family: "Inter", sans-serif;
+        }
+       </style>
 </head>
-<body>
+<body class="font-raleway">
+    <header class="container mx-auto max-w-screen-xl lg:my-6">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-3xl font-extrabold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#1DD10019]">Bus <img src="images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto max-w-screen-xl">
+                <!--Banner Section-->
+            <div class="hero min-h-screen bg-base-200 bg-[url(images/banner.png)] bg-no-repeat rounded-[32px]">
+                <div class="hero-content text-center space-y-6">
+                  <div class="max-w-2xl">
+                    <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with </h1>
+                    <h1 class="text-6xl font-extrabold text-[#1DD100]">P Paribahan </h1>
+                    <p class="py-6 text-white">P Paribahan offers seamless end-to-end travel solutions, ensuring convenience and comfort throughout your journey.</p>
+                    <button class="btn bg-[#1DD100] border-0 font-bold" type="submit">Buy Tickets</button>
+                  </div>
+                </div>
+            </div>
+              <!--Best offers Section-->
+              <section>
+                <div>
+                    <h1 class="text-center font-bold text-4xl teext-black mt-16">Best offers for you</h1>
+                </div>
+                <div class="flex justify-evenly lg:flex-row flex-col  mt-12 mb-12">
+                    <div class="flex lg:flex-row">
+                        <div class="bg-[#FFBF0F] lg:w-96 w-5/6  text-black font-inter p-8 lg:h-40 rounded-l-3xl">
+                            <h2 class="text-3xl font-extrabold"> 15% OFF</h2>
+                            <h6 class="font-bold"> on your next purchase</h6>
+                            <p>use by January 2024</p>
+                        </div>
+                        <img class="-ml-12 lg:h-40 " src="images/cupon-devider.png" alt="image">
+                        <div class="bg-[#FFBF0F] lg:w-60 w-36 text-black font-raleway p-8 lg:h-40 text-center rounded-r-3xl">
+                            <h2 class="text-3xl font-extrabold"> NEW15 </h2>
+                            <h6> Coupon Code</h6>
+                        </div>  
+        
+                    </div>
+                    <div class="flex lg:flex-row mt-2">
+                        <div class="bg-[#F78C9C] lg:w-96 w-5/6 text-black font-inter p-8 lg:h-40 rounded-l-3xl">
+                            <h2 class="text-3xl font-extrabold"> 15% OFF</h2>
+                            <h6 class="font-bold"> on your next purchase</h6>
+                            <p>use by January 2024</p>
+                        </div>
+                        <img class="-ml-12 lg:h-40 " src="images/cupon-devider.png" alt="image">
+                        <div class="bg-[#F78C9C] lg:w-60 w-36 text-black font-raleway p-8 lg:h-40 text-center rounded-r-3xl">
+                            <h2 class="text-3xl font-extrabold"> NEW15 </h2>
+                            <h6> Coupon Code</h6>
+                        </div>  
+        
+                    </div>
+                </div>
+               
+              </section>
+        </div>
+                 <!--P.H Paribahan Section-->
+        <section class="rounded-t-[88px] border-t-2 bg-[#F7F8F8] border-[#1DD100] mt-8 p-6">
+            <div>
+                <div class="text-center mt-8 mb-8 py-9 space-y-8">
+                    <h1 class="text-4xl font-extrabold">P.H Paribahan</h1>
+                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                </div>
+            </div>
+            <div class="container mx-auto max-w-screen-xl mb-12 ">
+                <div class="flex lg:flex-row flex-col min-h-[418px] justify-between">
+                    <div class="bg-white p-12 rounded-2xl w-full">
+                        <div class="flex lg:flex-row flex-col justify-start  w-full">
+                            <img src="images/bus-logo.png" alt="">
+                            <h4 class="text-3xl text-black font-bold">Greenline Paribahan</h4> 
+                           
+                            <div class="flex bg-[#1DD10026] p-4 rounded-xl lg:ml-80">
+                                <img  src="images/seat-green.png" alt="">
+                                <span class="text-[#1DD100] text-base">40 Seats left</span>
+                            </div>
+                        </div>
+                        <p class=" lg:ml-20 -mt-3">Coach-009-WEB ! AC_Business</p>
+                        <div class="bg-[#F7F8F8] p-7 mt-6 rounded-3xl space-y-3">
+                            <div class="flex lg:flex-row flex-col lg:justify-between">
+                                <p>Route</p>
+                                <p>Dhaka - Sylhet</p>
+                            </div>
+                            <hr class="border-dotted">
+                            <div class="flex justify-between">
+                                <p>Departure Time</p>
+                                <p>9:00 PM</p>
+                            </div>
+                            <hr class="border-dotted">
+                            <div class="flex lg:flex-row flex-col justify-evenly lg:space-x-5">
+                                <p class="badge p-5 mt-2 rounded-xl bg-[#0307120D]">Boarding Point - Laxmipur</p>
+                                <p class="badge p-5 mt-2 rounded-xl bg-[#0307120D]">Dropping Point - Bogura</p>
+                                <p class="badge p-5 mt-2 rounded-xl bg-[#0307120D]">Est. Time - 11 Hour</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr class="min-h-[400px] mt-2 border-[#1DD100] border border-dotted">    
+                 <!-- <img class="-ml-10" src="images/info-devider.png" alt=""> -->
+                    <div class="bg-white lg:w-96 p-12 text-black rounded-2xl text-center space-y-6">
+                        <img class="m-auto" src="images/fare.png" alt="" style="margin-top: 50px; text-align: center;">
+                        <h2 class="text-3xl font-extrabold"> 550 Taka </h2>
+                        <h6>Per Seat</h6>
+                    </div>
+                </div>
+                
+                
+            </div>
+          </section>
+
+    </main>
     
-    
+      
+     
 </body>
 </html>
